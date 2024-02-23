@@ -33,6 +33,11 @@ export default {
                     name: 'attribution',
                     type: 'string',
                     title: 'Atribut',
+                },
+                {
+                    name: 'alt',
+                    type: 'string',
+                    validation: Rule => Rule.required()
                 }
             ]
         },

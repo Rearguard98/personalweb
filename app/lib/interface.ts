@@ -4,6 +4,7 @@ export interface postCard {
     currentSlug: string;
     poster:any;
     attribute:string;
+    alt:string;
 }
 export interface singlePost{
     currentSlug:string;
@@ -11,4 +12,5 @@ export interface singlePost{
     content:any;
     poster:any;
     attribute:string;
+    alt:string;
 }

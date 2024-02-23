@@ -10,21 +10,22 @@ async function getData(){
   title,
     excerpt,
     "currentSlug":slug.current,
-    poster
+    poster,
 }`;
 const data = await client.fetch(query)
 return data;
 }
+export const revalidate = 60
 export default async function Home() {
   const data: postCard[] = await getData()
   
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
+    <div className="mb-50px grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
       {data.map((post,idx) =>(
         <Card key={idx}>
           <Image 
           src={urlFor(post.poster).url()} 
-          alt={data.title}
+          alt="image"
           width={500} 
           height={500}
           className="rounded-t-lg h-[200px] object-cover"
