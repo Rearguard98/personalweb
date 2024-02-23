@@ -24,7 +24,7 @@ export default async function Home() {
         <Card key={idx}>
           <Image 
           src={urlFor(post.poster).url()} 
-          alt="image" 
+          alt={data.title}
           width={500} 
           height={500}
           className="rounded-t-lg h-[200px] object-cover"
