@@ -7,6 +7,12 @@ export default function Navigasi(){
         <Link href="/" className="font-bold text-3xl">
             Arrosyid<span className="text-primary">Blog</span>
         </Link>
+        <Link href="/tentang" className="font-bold text-l">
+                Tentang
+        </Link>
+        <Link href="/kontak" className="font-bold text-l">
+                Kontak
+        </Link>
 
         <ModeToggle/>
         </nav>

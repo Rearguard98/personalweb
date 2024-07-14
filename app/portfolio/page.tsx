@@ -28,8 +28,8 @@ export const metadata = {
 }
 export default async function Portfolio() {
     return (
-        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
-            <h1>Portfolio</h1>
-        </div>
+        < div className="w-full max-w-6xl md:container md:mx-auto content-center text-center items-center my-28" >
+            <h1 className="text-4xl text-center font-bold">Portfolio</h1>
+        </div >
     )
 }

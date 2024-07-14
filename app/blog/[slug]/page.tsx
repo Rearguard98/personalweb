@@ -25,10 +25,10 @@ export default async function BlogArticle({
     const data: singlePost = await getData(params.slug);
 
     return (
-        <div className="w-auto mt-10 items-center mb-50px">
+        <div className="w-full mt-28 items-center mb-28">
         <h1 className="mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl">{data.title}</h1>
-<Image src={urlFor(data.poster).url()} width={1920} height={1080} alt="image" className="items-center w-auto rounded-lg mt-10 border" priority/>        
-<div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary">
+<Image src={urlFor(data.poster).url()} width={1920} height={1080} alt="image" className="items-center w-full rounded-lg mt-10 border" priority/>        
+<div className="mt-16 prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary w-full">
     <PortableText value={data.content}/>
 </div>
 </div> 
