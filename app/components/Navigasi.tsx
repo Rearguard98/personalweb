@@ -13,6 +13,9 @@ export default function Navigasi(){
         <Link href="/kontak" className="font-bold text-l">
                 Kontak
         </Link>
+        <Link href="/portfolio" className="font-bold text-l">
+        Portfolio
+        </Link>
 
         <ModeToggle/>
         </nav>
