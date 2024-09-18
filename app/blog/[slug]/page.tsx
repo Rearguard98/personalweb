@@ -2,6 +2,7 @@ import { singlePost } from "@/app/lib/interface";
 import { client, urlFor } from "@/app/lib/sanity";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const revalidate = 60
 async function getData(slug:string){
@@ -31,6 +32,7 @@ export default async function BlogArticle({
 <div className="mt-16 prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary w-full">
     <PortableText value={data.content}/>
 </div>
+            <SpeedInsights />
 </div> 
     );
 }

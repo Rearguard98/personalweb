@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 async function getData(){
   const query = `
   *[_type=='post'] | order(_createdAT desc){
@@ -66,6 +68,7 @@ export default async function Home() {
           </CardContent>
         </Card>
       ))}
+      <SpeedInsights />
     </div>
   );
 }

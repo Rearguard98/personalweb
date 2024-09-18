@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
     openGraph: {
@@ -32,6 +33,7 @@ export default async function Kontak() {
         < div className = "w-full max-w-6xl md:container md:mx-auto content-center text-center items-center my-28" >
         <h1 className="text-4xl text-center font-bold">Kontak</h1>
         <p>Kontak saya di </p>
+            <SpeedInsights />
         </div >
     )
 }
