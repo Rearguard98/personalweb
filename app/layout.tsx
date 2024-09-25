@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  verification: {
+    google: "QxK_V4Wv4TFfWlBeWG4BIXXzTgf0wVM8KUYExjjBVdo"
+  },
   metadataBase: new URL('https://www.arrosyid.my.id'),
   alternates: {
     canonical: '/',
