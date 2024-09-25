@@ -30,9 +30,12 @@ export const metadata = {
 }
 export default async function Portfolio() {
     return (
-        < div className="w-full max-w-6xl md:container md:mx-auto content-center text-center items-center my-28" >
+        <>
+        < div className="w-full max-w-6xl md:container md:mx-auto content-center text-center items-center my-28 pb-36" >
             <h1 className="text-4xl text-center font-bold">Portfolio</h1>
+            <p className="p-10">Halaman ini masih dalam pengembangan </p>
             <SpeedInsights />
         </div >
+        </>
     )
 }

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Website Pribadi Arrosyid Al Ayubi",
   generator: 'Next.js',
   applicationName: 'Next.js',
-  referrer: 'origin-when-cross-origin',
+  referrer: 'strict-origin-when-cross-origin',
   keywords: ['Arrosyid Al Ayubi', 'Website Arrosyid Al Ayubi'],
   authors: [{ name: 'Arrosyid Al Ayubi', url: 'https://www.arrosyid.my.id' }],
   creator: 'Arrosyid Al Ayubi',
@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
     languages: {
+      'id': '/',
       'en': '/en',
       'ar': '/ar',
     },

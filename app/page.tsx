@@ -28,12 +28,12 @@ export const metadata = {
     siteName: 'ArrosyidBlog',
     images: [
       {
-        url: 'https://www.arrosyid.my.id/og.png', // Must be an absolute URL
+        url: 'https://www.arrosyid.my.id/og.png',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://www.arrosyid.my.id/og-alt.png', // Must be an absolute URL
+        url: 'https://www.arrosyid.my.id/og-alt.png',
         width: 1800,
         height: 1600,
         alt: 'OpenGraph Image',
@@ -48,7 +48,12 @@ export default async function Home() {
   const data: postCard[] = await getData()
   
   return (
+    <>
+    <div>
+        <h1 className="p-20 text-center text-5xl font-bold">Halo Selamat Datang di Website Pribadi saya</h1>
+    </div>
     <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
+      
       {data.map((post,idx) =>(
         <Card key={idx}>
           <Image 
@@ -70,5 +75,5 @@ export default async function Home() {
       ))}
       <SpeedInsights />
     </div>
-  );
-}
+    </>);
+  }

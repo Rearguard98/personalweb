@@ -30,10 +30,12 @@ export const metadata = {
 }
 export default async function Kontak() {
     return (
-        < div className = "w-full max-w-6xl md:container md:mx-auto content-center text-center items-center my-28" >
+        <>
+        < div className = "w-full max-w-6xl md:container md:mx-auto content-center text-center items-center my-28 pb-36" >
         <h1 className="text-4xl text-center font-bold">Kontak</h1>
-        <p>Kontak saya di </p>
+        <p className="p-10">Halaman ini masih dalam pengembangan </p>
             <SpeedInsights />
         </div >
+        </>
     )
 }
